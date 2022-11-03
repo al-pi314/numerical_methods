@@ -16,4 +16,11 @@ function [x,X,k] = iteracija(g,x0,tol,N)
 %  x    zadnji priblizek izracunan z navadno iteracijo,
 %  X    seznam vseh priblizkov izracunanih z navadno iteracijo,
 %  k    stevilo opravljenih korakov iteracije.
+    X = [];
+    while length(X) < N && (length(X) < 2 || abs(X(end) - X(end-1)) > tol)
+        x0 = g(x0);
+        X(end + 1) = x0;
+    end
+    x = X(end);
+    k = length(X);
 end
