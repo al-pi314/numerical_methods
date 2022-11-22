@@ -1,0 +1,72 @@
+1.NALOGA
+
+Tocna nicla
+-2.6783469900 
+Priblizki izracunani po Haylejevi metodi
+-1.1000000000 
+-1.3135530633 
+-1.9413810167 
+-2.6271165654 
+-2.6783369527 
+-2.6783469900 
+-2.6783469900 
+Napake priblizkov izracunanih s Haylejevo metodo
+1.5783469900 
+1.3647939267 
+0.7369659733 
+0.0512304247 
+0.0000100373 
+0.0000000000 
+0.0000000000 
+Stevilo korakov Halleyeve metode
+6
+Priblizki izracunani po sekantni metodi
+-0.2500000000 
+-3.0000000000 
+-0.9026679645 
+-2.6652673612 
+-2.6800224572 
+-2.6783514004 
+-2.6783469885 
+-2.6783469900 
+-2.6783469900 
+Napake priblizkov izracunanih s sekantno metodo
+2.4283469900 
+0.3216530100 
+1.7756790255 
+0.0130796289 
+0.0016754672 
+0.0000044104 
+0.0000000015 
+0.0000000000 
+0.0000000000 
+Stevilo korakov sekantne metode
+7
+
+
+
+2.NALOGA
+
+a) Lu razcep
+
+Maximalni element
+2.9995872679 
+Minimalni element
+-1.2229321513 
+Norma 1
+7
+Norma Inf
+13.3180631059 
+Frobeniusova norma
+6.5649372705 
+Determinanta U-L brez pivotiranja
+1.5528614933e+06 
+Determinanta U-L z delnim pivotiranjem
+-0.4819457171
+
+b) Thomasov algoritem
+
+Maximum prvih norm vektorjev u
+24.7617853638
+Minimum drugih norm vektorjev l
+1.6214220399
