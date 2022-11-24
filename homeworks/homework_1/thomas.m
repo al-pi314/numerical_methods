@@ -16,10 +16,11 @@ function [l,u] = thomas(a,b,c)
 %       (ostali elementi L so enaki 0),
 %  u    glavna diagonala matrike U v LU razcepu matrike A (diagonala nad
 %       glavno diagonalo je enaka b, vsi ostali elementi U so enaki 0).
-    n = size(A, 1);
-
+    n = size(a, 2);
     
-    
-
-
+    u(1) = a(1);
+    for i = 2:n
+        l(i -1) = c(i -1)/u(i -1);
+        u(i) = a(i) - b(i -1) * l(i -1);
+    end
 end
