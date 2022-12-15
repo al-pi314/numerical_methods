@@ -8,11 +8,11 @@ for i = 1:size(D, 1)
     A1(i, :) = f1(t);
 end
 
-x = A1 \ D(: , 2);
+x1 = A1 \ D(: , 2);
 
 for i = 1:size(D, 1)
     t = D(i, 1);
-    F1(i) = f1(t) * x; 
+    F1(i) = f1(t) * x1; 
 end
 
 figure
@@ -29,11 +29,11 @@ for i = 1:size(D, 1)
     A2(i, :) = f2(t);
 end
 
-x = A2 \ D(: , 2);
+x2 = A2 \ D(: , 2);
 
 for i = 1:size(D, 1)
     t = D(i, 1);
-    F2(i) = f2(t) * x; 
+    F2(i) = f2(t) * x2; 
 end
 
 figure
@@ -41,3 +41,11 @@ title("F2")
 hold on
 plot(D(:, 1), D(:, 2))
 plot(D(:, 1), F2)
+
+disp("2050 - F1 and F2")
+f1(2050) * x1
+f2(2050) * x2
+
+disp("2100 - F1 and F2")
+f1(2100) * x1
+f2(2100) * x2
