@@ -21,10 +21,10 @@ function [x,X,k] = newton(f,Jf,x0,tol,N)
     x = x0;
     X(1, :) = x;
     for k = 1: N
-        delta_x = Jf(X(end, :)) \ -f(X(end, :)); 
-        x = X(end, :) + delta_x';
+        x = X(end, :) - f(X(end, :)) * Jf(X(end, :));
         X(end +1, :) = x;
-        if norm(X(end -1) - X(end), 2) <= tol
+
+        if norm(X(end, :) - X(end -1, :), 2) <= tol
             break
         end
     end
