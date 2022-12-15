@@ -1,0 +1,63 @@
+Model CO2: (rešitve so zaokorožene na 10 decimalnih mest)
+
+Funkcija F1
+Koeficienti a,b,c,d (shranjeni v vektorju x) funkcije 
+F(a,b,c,d,t) = a*t+b+c*sin(2*pi*t)+d*cos(2*pi*t),
+dobljeni z direktnim reševanjem sistema
+x = A\b, so enaki 
+
+x =
+
+   1.0e+03 *
+
+   0.0016152856
+  -2.8576325386
+   0.0026467883
+  -0.0010508754
+
+
+
+
+Funkcija F2
+Koeficienti a,b,c,d,e (shranjeni v vektorju x) funkcije 
+F(a,b,c,d,e,t) = a*t^2+b*t+c+d*sin(2*pi*t)+e*cos(2*pi*t),
+dobljeni z direktnim reševanjem sistema
+x = A\b, so enaki 
+
+x =
+
+   1.0e+04 *
+
+   0.0000013111
+  -0.0050581595
+   4.9087782809
+   0.0002654384
+  -0.0000993539
+
+Z uporabo funkcije F2 lahko napovemo:
+F2(2050) = 4.94482621746e+02
+F2(2100) = 6.85984020964e+02
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
